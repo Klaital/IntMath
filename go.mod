@@ -1,3 +1,3 @@
 module github.com/klaital/intmath
 
-go 1.14
+go 1.12
