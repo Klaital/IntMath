@@ -17,7 +17,7 @@ func (a *Aggregator) Sum() int64 {
 	for _, i := range a.data {
 		sum += i
 	}
-	return i
+	return sum
 }
 func (a *Aggregator) Mean() int64 {
 	return a.Sum() / a.Length()
