@@ -11,7 +11,7 @@ func NewSet() *Set {
 }
 
 func (s *Set) GetItems() []int64 {
-	var uniques []int64
+	uniques := make([]int64, 0, s.Length())
 	for datum, present := range s.data {
 		if present {
 			uniques = append(uniques, datum)
