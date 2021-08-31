@@ -2,6 +2,8 @@ package intmath
 
 import "math"
 
+// Abs computes the absolute value of x.
+// Exception: MinInt turns into MaxInt
 func Abs(x int64) int64 {
 	if x > 0 {
 		return x
@@ -14,6 +16,7 @@ func Abs(x int64) int64 {
 	return -x
 }
 
+// Max returns the greater of the two input parameters.
 func Max(x int64, y int64) int64 {
 	if x >= y {
 		return x
@@ -21,6 +24,7 @@ func Max(x int64, y int64) int64 {
 	return y
 }
 
+// MaxUint64 returns the greater of the two input parameters.
 func MaxUint64(x uint64, y uint64) uint64 {
 	if x >= y {
 		return x
